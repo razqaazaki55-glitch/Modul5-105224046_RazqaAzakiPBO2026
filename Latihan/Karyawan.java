@@ -66,7 +66,7 @@ public class Karyawan {
 
         Karyawan karyawan1 = new Karyawan(idKaryawan, nama);
 
-        //soal no. 2
+         //soal no. 2
         double gajiPokok1;
         do {
             System.out.print("Masukkan Gaji Pokok Karyawan: ");
@@ -74,14 +74,15 @@ public class Karyawan {
             karyawan1.setGajiPokok(gajiPokok1);
         } while (gajiPokok1 < 0);
 
-        //soal NO. 1
-        System.out.println("Data Karyawan\t");
-        System.out.println("ID Karyawan: " + karyawan1.getIdKaryawan());
-        System.out.println("Nama Karyawan: " + karyawan1.getNama());
-        System.out.println("Gaji Pokok: " + karyawan1.getGajiPokok());
-        
-        karyawan1.tampilkanDataKaryawan();
+        //soal no. 3
+        input.nextLine();
+        System.out.print("Masukkan Departemen: ");
+        String departemen = input.nextLine();
+        karyawan1.setDepartemen(departemen);
 
+        karyawan1.tampilkanDataKaryawan();
+        
+        
         input.close();
     }
 }
