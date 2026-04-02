@@ -17,7 +17,7 @@ public class RekeningBank {
         if (saldoBaru >= 0) {
             this.saldo = saldoBaru;
         } else {
-            System.out.println("Error: Saldo tidak boleh negatif!");
+            System.out.println("Saldo tidak boleh negatif");
         }
     }
 
