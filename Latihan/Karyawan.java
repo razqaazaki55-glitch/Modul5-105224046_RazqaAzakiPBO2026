@@ -4,18 +4,26 @@ public class Karyawan {
     private String idKaryawan;
     private String nama;
 
-    //method setter
+    //method constructor
     public Karyawan(String idKaryawan, String nama){
         this.idKaryawan = idKaryawan;
         this.nama = nama; 
     }
     //method getter
-    public String getIdKaryawan(){
-        return this.idKaryawan;
+    public String getIdKaryawan() {
+        return idKaryawan;
     }
-    //method getter
+    //method setter
+    public void setIdKaryawan(String idKaryawan) {
+        this.idKaryawan = idKaryawan;
+    }
+    //method getter 
     public String getNama(){
         return this.nama;
+    }
+    //method setter
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public static void main(String[] args) {
