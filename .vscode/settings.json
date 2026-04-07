@@ -2,8 +2,9 @@
     "java.project.sourcePaths": [
         "src",
         "PreTest",
+        "PostTest",
         "Latihan",
-        "PostTest"
+        "THT4&5"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
