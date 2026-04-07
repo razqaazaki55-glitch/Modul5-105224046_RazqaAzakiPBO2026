@@ -1,19 +1,12 @@
 class KamarHotel {
-
-    // =========================
-    // ATRIBUT (Encapsulation)
-    // =========================
+    //Atribut
     private String nomorKamar;
     private String tipeKamar;
     private int kapasitasMaksimal;
     private double hargaPerMalam;
     private boolean isTersedia;
 
-    // =========================
-    // CONSTRUCTOR
-    // =========================
-
-    // Constructor 1 (kilat)
+    // Constructor 1
     public KamarHotel(String nomorKamar, String tipeKamar, int kapasitasMaksimal) {
         this.nomorKamar = nomorKamar;
         this.kapasitasMaksimal = kapasitasMaksimal;
@@ -23,7 +16,7 @@ class KamarHotel {
         this.hargaPerMalam = 0;
     }
 
-    // Constructor 2 (lengkap)
+    // Constructor 2
     public KamarHotel(String nomorKamar, String tipeKamar, int kapasitasMaksimal, double hargaPerMalam) {
         this.nomorKamar = nomorKamar;
         this.kapasitasMaksimal = kapasitasMaksimal;
@@ -33,9 +26,7 @@ class KamarHotel {
         setHargaPerMalam(hargaPerMalam);
     }
 
-    // =========================
-    // GETTER
-    // =========================
+    //Getter 
     public String getNomorKamar() {
         return nomorKamar;
     }
@@ -56,9 +47,7 @@ class KamarHotel {
         return isTersedia;
     }
 
-    // =========================
-    // SETTER (dengan validasi)
-    // =========================
+    //Setter
     public void setTipeKamar(String tipeKamar) {
         if (tipeKamar.equalsIgnoreCase("Reguler") ||
             tipeKamar.equalsIgnoreCase("Premium") ||
